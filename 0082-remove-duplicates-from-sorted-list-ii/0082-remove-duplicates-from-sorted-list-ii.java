@@ -13,25 +13,29 @@ class Solution {
         if(head==null || head.next==null){
             return head;
         }
-        ListNode dummy=new ListNode();
-        dummy.next=head;
-        ListNode prev=dummy,curr=head;
-
-        while(curr!=null && curr.next!=null){
-            // Atleast 2 nodes in list
-            if(curr.val==curr.next.val){
-                while(curr.next!=null && curr.val==curr.next.val){
-                    curr=curr.next;
-                }
-                prev.next=curr.next;
-            }
-            else{
-                prev=prev.next;
-            }
+        Map<Integer,Integer>map=new TreeMap<>();
+        ListNode curr=head;
+        while(curr!=null){
+            map.put(curr.val,map.getOrDefault(curr.val,0)+1);
             curr=curr.next;
         }
-        return dummy.next;
+        ListNode newHead=new ListNode(-1);
+        ListNode left=newHead;
+        for(int i:map.keySet()){
+            if(map.get(i)==1){
+                ListNode newNode=new ListNode(i);
+                left.next=newNode;
+                left=newNode;
+            }
+        }
+        return newHead.next;
     }
 }
-// T.C -> O(N)
-// S.C -> O(1)
+// Craete a HashMap
+// put occurrence in a map -> (1,1),(2,1),(3,2),(4,2),(5,1)
+// Loop goes through keys in map -> i={1,2,3,4,5}
+// if(map.get(i)==1) it means value of i equals to 1 that means we have only elements that occurrence is only 1 in head -> 1,2,5
+// create a new ListNode which has object newNode
+// ListNode newHead=new ListNode(-1) -> -1 is dummy value
+// newNode stores map elements which will be connected by ListNode next
+// return ListNode object newHead.next
