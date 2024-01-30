@@ -14,14 +14,10 @@
  * }
  */
 class Solution {
+    int diameter=0;
     public int diameterOfBinaryTree(TreeNode root) {
-        if(root==null){
-            return 0;
-        }
-        int diam1=diameterOfBinaryTree(root.left);
-        int diam2=diameterOfBinaryTree(root.right);
-        int diam3=height(root.left)+height(root.right);
-        return Math.max(diam3,Math.max(diam1,diam2));
+        height(root);
+        return diameter;
     }
     public int height(TreeNode root){
         if(root==null){
@@ -29,21 +25,23 @@ class Solution {
         }
         int leftheight=height(root.left);
         int rightheight=height(root.right);
-        int tree_height=Math.max(leftheight,rightheight)+1;
-        return tree_height;
+        diameter=Math.max(diameter,leftheight+rightheight);
+        return Math.max(leftheight,rightheight)+1;
     }
 }
-// T.C -> O(n^2) nested recursion
-// S.C -> O(n) space used by the call stack during the recursive calls.
+// T.C -> O(n)
+// S.C -> O(n)
+
+// Initializes the diameter variable to keep track of the maximum diameter during the traversal.
 
 // diameterOfBinaryTree method:
-// calculate diameter of a binary tree
-// If root is null, diameter is 0
-// It recursively calculates the diameter of the left and right subtrees
-// It also calculates diameter that passes through the root (diam3), which is the sum of the heights of the left and right subtrees.
+// Calls the height method, which calculates the height of each subtree and updates the diameter accordingly
+// Returns the calculated diameter
 
 // height method:
-// calculates height of a binary tree at root
-// If root is null, height is 0
-// It recursively calculates the height of the left and right subtrees
-// The height of the current tree is the maximum of the heights of the left and right subtrees, plus 1 (Math.max(leftheight, rightheight) + 1).
+// Recursively calculates the height of the binary tree while updating the diameter
+// Base case: if the current node (root) is null, the height is considered to be 0
+// Recursively calculates the height of the left and right subtrees using calls to height(root.left) and height(root.right)
+// Height of the current subtree is the maximum of the heights of the left and right subtrees, plus 1 (Math.max(leftheight, rightheight) + 1)
+// Diameter is updated by comparing it with the sum of the heights of the left and right subtrees (diameter = Math.max(diameter, leftheight + rightheight))
+// Returns the height of the current subtree
