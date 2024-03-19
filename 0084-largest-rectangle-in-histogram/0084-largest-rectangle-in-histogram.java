@@ -18,6 +18,38 @@ class Solution{
 // T.C -> O(n)
 // S.C -> O(n)
 
+// For i=0, height=2
+// stack is empty, st.push(0)-> stack:[0]
+// For i=1, height=1
+// pop the stack until it's empty and heights[1]<heights[0]
+// height= heights[0]= 2 now stack:[] 
+// width= i= 1
+// maxArea= Math.max(maxArea,height*width)= Math.max(0,2*1)= 2
+// push i in stack -> stack:[1]
+// For i=2, height=5
+// pop the stack until it's empty and heights[2]<heights[1] 5<1 -> No
+// push i in stack -> stack:[1,2]
+// For i=3, height=6
+// pop the stack until it's empty and heights[3]<heights[2] 6<5 -> No
+// push i in stack -> stack:[1,2,3]
+// For i=4, height=2
+// pop the stack until it's empty and heights[4]<heights[3] 2<6
+// height= heights[3]= 6 now stack:[1,2]
+// width= i-st.peek()-1= 4-2-1= 1
+// maxArea= Math.max(maxArea,height*width)= Math.max(2,6*1)= 6
+// pop the stack until it's empty and heights[4]<heights[2] 2<5
+// height= heights[2]= 5 now stack:[1]
+// width= i-st.peek()-1= 4-1-1= 2
+// maxArea= Math.max(maxArea,height*width)= Math.max(6,5*2)= 10
+// push i in stack -> stack:[1,4]
+// For i=5, height=3
+// pop the stack until it's empty and here i==height.length || heights[5]<heights[4] 3<2 -> No
+// push i in stack -> stack:[1,4,5]
+// For i=6
+// pop the stack until it's empty and here i==height.length 6=6 -> yes
+// height= heights[5]= 3 now stack:[1,4]
+// width= i-st.peek()-1= 6-4-1= 1
+// maxArea= Math.max(maxArea,height*width)= Math.max(10,3*1)= 10
 
 class Solution2 {
     public int largestRectangleArea(int[] heights) {
