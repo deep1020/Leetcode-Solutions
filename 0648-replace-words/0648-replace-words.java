@@ -1,33 +1,64 @@
 class Solution {
-    public String replaceWords(List<String> dictionary, String sentence) {
-        Set<String> set=new HashSet<>(dictionary);
-        StringBuilder result=new StringBuilder();
-        String words[]=sentence.split("\\s+"); // splits the string wherever there are one or more consecutive whitespace characters.
-        for(String word:words){
-            String prefix="";
-            for(int i=1;i<=word.length();i++){
-                prefix=word.substring(0,i);
-                if(set.contains(prefix)){
-                    break;
-                }    
+    class Node{
+        Node[] children;
+        boolean endOfWord;
+        Node(){
+            children=new Node[26];
+            for(int i=0;i<26;i++){
+                children[i]=null;
             }
-            if(result.length()>0){
-                result.append(" ");
-            }
-            result.append(prefix);
+            endOfWord=false;
         }
-        return result.toString();
+    }
+    Node root=new Node();
+    void insert(String word){
+        Node curr=root;
+        for(int i=0;i<word.length();i++){
+            int idx=word.charAt(i)-'a';
+            if(curr.children[idx]==null){
+                curr.children[idx]=new Node();
+            }
+            if(i==word.length()-1){
+                curr.children[idx].endOfWord=true;
+            }
+            curr=curr.children[idx];
+        }
+    }
+    String search(String word){
+        Node curr=root;
+        for(int i=0;i<word.length();i++){
+            char ch=word.charAt(i);
+            if(curr.children[ch-'a']==null){
+                return word;
+            }
+            curr=curr.children[ch-'a'];
+            if(curr.endOfWord){
+                return word.substring(0,i+1);
+            }
+        }
+        return word;
+    }
+    public String replaceWords(List<String> dictionary, String sentence) {
+        for(String word:dictionary){
+            insert(word);
+        }
+        String words[]=sentence.split(" ");
+        StringBuilder sb=new StringBuilder();
+        for(String word:words){
+            sb.append(search(word));
+            sb.append(" ");
+        }
+        return sb.toString().trim();
     }
 }
-// T.C -> O(k+m+n*l)
-// HashSet from the dictionary takes O(k), where k is the number of words in the dictionary.
-// m is the length of the sentence as it scans entire sentence to find whitespace characters.
-// n is the words in the sentence that we iterate each word in sentence.
-// l is the average length of the words in the sentence.
-// StringBuilder takes O(1) time on average for each append operation.
-// inner loop runs l times for each word, making the total time for the inner operations O(n * l).
-
-// S.C -> O(k+m+n)
-// HashSet stores k words from the dictionary
-// array words stores up to n words
-// StringBuilder holds the final result which takes O(m) space
+// Best approach - Trie
+// T.C -> O(n*l +m+ w*l)
+// Inserting each word into the Trie takes O(l), where l is the length of the word.
+// For a dictionary of size n with words of average length L, inserting all words takes O(n*l).
+// Splitting the sentence into words takes O(m), where m is the length of the sentence.
+// For each word in the sentence, searching in the Trie takes O(l), where l is the length of the word.
+// If there are w words in the sentence and each word has an average length of l, the total time for searching is O(w*l).
+// S.C -> O(n*l +m)
+// Each character in each word results in a new node, giving us a space complexity of O(n*l*26). However, 26 is a constant, this simplifies to O(n*l).
+// Space used to store the split words from the sentence is O(m).
+// StringBuilder used to construct the final sentence also takes O(m) space.
