@@ -1,6 +1,24 @@
 class Solution {
     public int minIncrementForUnique(int[] nums) {
-        Arrays.sort(nums);
+        // Find the maximum element in the array
+        int maxVal=Integer.MIN_VALUE;
+        for(int num:nums){
+            maxVal=Math.max(maxVal,num);
+        }
+        // Create a counting array to store the count of each element
+        int count[]=new int[maxVal+1];
+        // Count the occurrences of each element
+        for(int num:nums){
+            count[num]++;
+        }
+        int index=0;
+        // store the sorted array in nums
+        for(int i=0;i<=maxVal;i++){
+            while(count[i]>0){
+                nums[index++]=i;
+                count[i]--;
+            }
+        }
         int minMoves=0;
         for(int i=1;i<nums.length;i++){
             if(nums[i]<=nums[i-1]){
@@ -11,11 +29,5 @@ class Solution {
         return minMoves;
     }
 }
-// T.C -> O(nlogn)
-// S.C -> O(1)
-// sort nums elements as we need minimum element first and we can compare current element with previous element to make current element unique by incrementing 1
-// Iterate from nums[1] to num.length-1. we don't take nums[0] as it's already minimum
-// Compare current element with previous element i.e nums[i]<=nums[i-1]
-// If current element is less than equal to previous element, find min moves required using nums[i-1]-nums[i]+1
-// Make current element incrementing by 1 of previous element i.e nums[i]=nums[i-1]+1
-// Return min moves
+// T.C -> O(n+m) step of creating and populating the counting array, which is O(n) 
+// S.C -> O(n) maxVal size is equal to nums.length
