@@ -1,4 +1,4 @@
-class Solution {
+class Solution2 {
     public int minKBitFlips(int[] nums, int k) {
         int ans=0;
         int count=0;
@@ -34,3 +34,29 @@ class Solution {
 // If not, it returns -1 indicating it is impossible to achieve the goal
 // Otherwise, it increments ans and count, and marks the current position in the flipped array to indicate a flip has been performed
 // final value of ans, which represents the total number of flips required, is returned
+
+class Solution {
+    public int minKBitFlips(int[] nums, int k) {
+        int ans=0;
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            if(i>=k){ // Help to maintain window of k size
+                if(nums[i-k]>1){
+                    nums[i-k]-=2;
+                    count-=1;
+                }
+            }
+            if((nums[i]==1 && count%2==1) || (nums[i]==0 && count%2==0)){
+                if(i+k>nums.length){
+                    return -1;
+                }
+                ans++;
+                count++;
+                nums[i]+=2;
+            }
+        }
+        return ans;
+    }
+}
+// T.C -> O(n)
+// S.C -> O(1) without taking any extra array
