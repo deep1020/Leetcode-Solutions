@@ -44,3 +44,15 @@ Contributions are welcome! If you have a better solution or an alternative appro
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
+## Hash Table
+|  |
+| ------- |
+| [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
+<!---LeetCode Topics End-->
