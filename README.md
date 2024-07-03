@@ -51,6 +51,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 |  |
 | ------- |
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
+| [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 ## Hash Table
 |  |
@@ -76,6 +77,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Two Pointers
 |  |
 | ------- |
+| [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 ## Binary Search
 |  |
@@ -85,4 +87,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 |  |
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+## Math
+|  |
+| ------- |
+| [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
 <!---LeetCode Topics End-->
