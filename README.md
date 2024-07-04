@@ -53,11 +53,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
 | [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Hash Table
 |  |
 | ------- |
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -79,14 +81,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | ------- |
 | [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Binary Search
 |  |
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Sorting
 |  |
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Math
 |  |
 | ------- |
