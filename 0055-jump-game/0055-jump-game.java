@@ -9,3 +9,6 @@ class Solution {
         return lastIndex==0;
     }
 }
+// T.C -> O(n)
+// S.C -> O(1)
+// Greedy Approach
