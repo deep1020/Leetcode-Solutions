@@ -1,6 +1,6 @@
 class Solution {
     public int jump(int[] nums) {
-        if(nums.length==1){
+        if(nums.length<=1){
             return 0;
         }
         int start=0,end=0;
@@ -33,3 +33,10 @@ class Solution {
 // Increment the jump counter by 1
 // Continue this process until the loop ends, which means all indices up to the second last index have been processed.
 // 3) Return total number of jumps needed to reach the last index
+
+// nums = [2,3,1,1,4]
+// We can use any of values in between this start and end to be used as the next jump
+// Either we can jump from 3 or 1
+// At each step, we find out how much farthest we can reach using value that is present in this block
+
+// Note: Math.min directly in the context of finding the minimum number of jumps to reach the last index is not straightforward because the problem is more about finding an optimal path rather than directly minimizing values
