@@ -1,8 +1,5 @@
 class Solution {
     public int jump(int[] nums) {
-        if(nums.length<=1){
-            return 0;
-        }
         int start=0,end=0;
         int farthest=0;
         int jump=0;
