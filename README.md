@@ -52,6 +52,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | ------- |
 | [0035-search-insert-position](https://github.com/deep1020/Leetcode-Solutions/tree/master/0035-search-insert-position) |
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
+| [0055-jump-game](https://github.com/deep1020/Leetcode-Solutions/tree/master/0055-jump-game) |
 | [0074-search-a-2d-matrix](https://github.com/deep1020/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
@@ -104,4 +105,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 |  |
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/deep1020/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/deep1020/Leetcode-Solutions/tree/master/0055-jump-game) |
+## Greedy
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/deep1020/Leetcode-Solutions/tree/master/0055-jump-game) |
 <!---LeetCode Topics End-->
