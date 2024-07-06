@@ -53,6 +53,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | [0035-search-insert-position](https://github.com/deep1020/Leetcode-Solutions/tree/master/0035-search-insert-position) |
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
 | [0045-jump-game-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0045-jump-game-ii) |
+| [0049-group-anagrams](https://github.com/deep1020/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/deep1020/Leetcode-Solutions/tree/master/0055-jump-game) |
 | [0057-insert-interval](https://github.com/deep1020/Leetcode-Solutions/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/deep1020/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
@@ -67,6 +68,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 |  |
 | ------- |
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
+| [0049-group-anagrams](https://github.com/deep1020/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [1217-relative-sort-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/1217-relative-sort-array) |
@@ -104,6 +106,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/deep1020/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/deep1020/Leetcode-Solutions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -162,4 +165,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/deep1020/Leetcode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
+## String
+|  |
+| ------- |
+| [0049-group-anagrams](https://github.com/deep1020/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 <!---LeetCode Topics End-->
