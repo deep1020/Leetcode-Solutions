@@ -60,12 +60,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0948-sort-an-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0948-sort-an-array) |
+| [1217-relative-sort-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/1217-relative-sort-array) |
 ## Hash Table
 |  |
 | ------- |
 | [0041-first-missing-positive](https://github.com/deep1020/Leetcode-Solutions/tree/master/0041-first-missing-positive) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [1217-relative-sort-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/1217-relative-sort-array) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -101,6 +103,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0948-sort-an-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0948-sort-an-array) |
+| [1217-relative-sort-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/1217-relative-sort-array) |
 ## Math
 |  |
 | ------- |
@@ -143,4 +146,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 |  |
 | ------- |
 | [0948-sort-an-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0948-sort-an-array) |
+| [1217-relative-sort-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/1217-relative-sort-array) |
 <!---LeetCode Topics End-->
