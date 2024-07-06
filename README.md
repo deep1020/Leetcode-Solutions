@@ -57,6 +57,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | [0057-insert-interval](https://github.com/deep1020/Leetcode-Solutions/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/deep1020/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0189-rotate-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0189-rotate-array) |
+| [0209-minimum-size-subarray-sum](https://github.com/deep1020/Leetcode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0948-sort-an-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0948-sort-an-array) |
@@ -95,6 +96,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | ------- |
 | [0035-search-insert-position](https://github.com/deep1020/Leetcode-Solutions/tree/master/0035-search-insert-position) |
 | [0074-search-a-2d-matrix](https://github.com/deep1020/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
+| [0209-minimum-size-subarray-sum](https://github.com/deep1020/Leetcode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0349-intersection-of-two-arrays](https://github.com/deep1020/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/deep1020/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Sorting
@@ -147,4 +149,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | ------- |
 | [0948-sort-an-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/0948-sort-an-array) |
 | [1217-relative-sort-array](https://github.com/deep1020/Leetcode-Solutions/tree/master/1217-relative-sort-array) |
+## Sliding Window
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/deep1020/Leetcode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/deep1020/Leetcode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
 <!---LeetCode Topics End-->
